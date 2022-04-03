@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EverscaleNet.Client</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.DependencyInjection.AddEverClientServiceCollectionExtensions">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AddEverClientServiceCollectionExtensions.AddEverClient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{EverscaleNet.Models.EverClientOptions},System.Action{EverscaleNet.Client.PackageManager.FilePackageManagerOptions})">
+            <summary>
+                Provide IEverClient and IEverPackageManager in DI
+            </summary>
+            <param name="services"></param>
+            <param name="configureEverClientOptions">
+                Configure network <see cref="T:EverscaleNet.Models.EverClientOptions" />
+                https://github.com/tonlabs/TON-SDK/blob/master/docs/mod_client.md#networkconfig
+                https://github.com/tonlabs/TON-SDK/blob/master/docs/mod_client.md#cryptoconfig
+                https://github.com/tonlabs/TON-SDK/blob/master/docs/mod_client.md#abiconfig
+            </param>
+            <param name="configurePackageManagerOptions">
+                Configure package manager, contracts path and etc.
+                <see cref="T:EverscaleNet.Client.PackageManager.FilePackageManagerOptions" />
+            </param>
+            <returns></returns>
+        </member>
+        <member name="T:EverscaleNet.Client.PackageManager.FilePackageManager">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Client.PackageManager.FilePackageManager.#ctor(Microsoft.Extensions.Options.IOptions{EverscaleNet.Client.PackageManager.FilePackageManagerOptions})">
+            <summary>
+                Create FilePackageManager
+            </summary>
+            <param name="optionsAccessor"></param>
+        </member>
+        <member name="M:EverscaleNet.Client.PackageManager.FilePackageManager.LoadPackage(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Client.PackageManager.FilePackageManager.LoadAbi(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Client.PackageManager.FilePackageManager.LoadTvc(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:EverscaleNet.Client.PackageManager.FilePackageManagerOptions">
+            <summary>
+                Setup path to contracts folder
+            </summary>
+        </member>
+        <member name="P:EverscaleNet.Client.PackageManager.FilePackageManagerOptions.PackagesPath">
+            <summary>
+                Path that will be used to load packages. Default is "_contracts"
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{4D4C3D88-DB14-5A14-2FF9-56AB4E6ADB89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serilog.Sinks.Unity3D", "Serilog.Sinks.Unity3D.csproj", "{04BC1DAA-D785-8AA3-3F2E-6DD07FC72538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{A8E01142-9585-5FA6-68EA-21F9BDE7646A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D4C3D88-DB14-5A14-2FF9-56AB4E6ADB89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4C3D88-DB14-5A14-2FF9-56AB4E6ADB89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4C3D88-DB14-5A14-2FF9-56AB4E6ADB89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4C3D88-DB14-5A14-2FF9-56AB4E6ADB89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04BC1DAA-D785-8AA3-3F2E-6DD07FC72538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BC1DAA-D785-8AA3-3F2E-6DD07FC72538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BC1DAA-D785-8AA3-3F2E-6DD07FC72538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BC1DAA-D785-8AA3-3F2E-6DD07FC72538}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8E01142-9585-5FA6-68EA-21F9BDE7646A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E01142-9585-5FA6-68EA-21F9BDE7646A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E01142-9585-5FA6-68EA-21F9BDE7646A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E01142-9585-5FA6-68EA-21F9BDE7646A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

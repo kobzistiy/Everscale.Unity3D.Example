@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EverscaleNet.Utils</name>
+    </assembly>
+    <members>
+        <member name="T:EverscaleNet.Utils.EverOS">
+            <summary>
+                EverOS static
+            </summary>
+        </member>
+        <member name="T:EverscaleNet.Utils.EverOS.Endpoints">
+            <summary>
+                Endpoints static
+            </summary>
+        </member>
+        <member name="P:EverscaleNet.Utils.EverOS.Endpoints.Everscale">
+            <summary>
+                Main network endpoints
+            </summary>
+        </member>
+        <member name="P:EverscaleNet.Utils.EverOS.Endpoints.Development">
+            <summary>
+                Dev network endpoints
+            </summary>
+        </member>
+        <member name="P:EverscaleNet.Utils.EverOS.Endpoints.NodeSE">
+            <summary>
+                Node SE network endpoints
+            </summary>
+        </member>
+        <member name="T:EverscaleNet.Utils.StringExtensions">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:EverscaleNet.Utils.StringExtensions.HexToDec(System.String)">
+            <summary>
+                Convert hex string to ulong
+            </summary>
+            <param name="hexValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EverscaleNet.Utils.StringExtensions.DecBalanceToCoins(System.String)">
+            <summary>
+                Convert balance in DEC to decimal of coins
+            </summary>
+            <param name="balance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EverscaleNet.Utils.StringExtensions.ToHexString(System.String)">
+            <summary>
+                Convert string to hex
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

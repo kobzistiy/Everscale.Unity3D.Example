@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EverscaleNet.Adapter.Rust</name>
+    </assembly>
+    <members>
+        <member name="T:EverscaleNet.Adapter.Rust.EverClientRustAdapter">
+            <summary>
+                Rust adapter.
+            </summary>
+        </member>
+        <member name="M:EverscaleNet.Adapter.Rust.EverClientRustAdapter.#ctor(Microsoft.Extensions.Options.IOptions{EverscaleNet.Models.EverClientOptions},Microsoft.Extensions.Logging.ILogger{EverscaleNet.Adapter.Rust.EverClientRustAdapter})">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Adapter.Rust.EverClientRustAdapter.#ctor(Microsoft.Extensions.Options.IOptions{EverscaleNet.Models.EverClientOptions})">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Adapter.Rust.EverClientRustAdapter.DisposeAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Adapter.Rust.EverClientRustAdapter.CreateContext(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Adapter.Rust.EverClientRustAdapter.RequestImpl(System.UInt32,System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

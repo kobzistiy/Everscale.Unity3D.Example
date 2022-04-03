@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EverscaleNet.Serialization</name>
+    </assembly>
+    <members>
+        <member name="T:EverscaleNet.Serialization.EverExceptionSerializer">
+            <summary>
+                Deserialize EverClient errors to EverClientException
+            </summary>
+        </member>
+        <member name="M:EverscaleNet.Serialization.EverExceptionSerializer.GetEverClientExceptionByResponse(System.String)">
+            <summary>
+                Deserialize response as ClientError and return EverClientException
+            </summary>
+            <param name="responseJson">Raw response</param>
+            <returns>EverClientException</returns>
+        </member>
+        <member name="T:EverscaleNet.Serialization.JsonExtensions">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:EverscaleNet.Serialization.JsonExtensions.Get``1(System.Nullable{System.Text.Json.JsonElement},System.String)">
+            <summary>
+                Short getting JsonElement property as object
+            </summary>
+            <param name="element"></param>
+            <param name="property"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:EverscaleNet.Serialization.JsonExtensions.Get``1(System.Text.Json.JsonElement,System.String)">
+            <summary>
+                Short getting JsonElement property as object
+            </summary>
+            <param name="element"></param>
+            <param name="property"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:EverscaleNet.Serialization.JsonExtensions.ToAnonymous``1(System.Text.Json.JsonElement,``0)">
+            <summary>
+                Convert JsonElement to prototype
+            </summary>
+            <param name="element"></param>
+            <param name="prototype"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:EverscaleNet.Serialization.JsonExtensions.ToObject``1(System.Nullable{System.Text.Json.JsonElement})">
+            <summary>
+            </summary>
+            <param name="element"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:EverscaleNet.Serialization.JsonExtensions.ToObject``1(System.Text.Json.JsonElement,System.Type)">
+            <summary>
+                Deserialize JsonElement to Object
+            </summary>
+            <param name="element"></param>
+            <param name="discriminatorType"></param>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:EverscaleNet.Serialization.JsonExtensions.ToJsonElement(System.Object)">
+            <summary>
+                Serialize Object to JsonElement
+            </summary>
+            <param name="element"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EverscaleNet.Serialization.JsonOptionsProvider">
+            <summary>
+                Register discriminator and converters
+            </summary>
+        </member>
+        <member name="F:EverscaleNet.Serialization.JsonOptionsProvider.JsonSerializerOptions">
+            <summary>
+                JsonSerializerOptions instance
+            </summary>
+        </member>
+        <member name="T:EverscaleNet.Serialization.PolymorphicSerializer">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:EverscaleNet.Serialization.PolymorphicSerializer.Deserialize``1(System.Text.Json.JsonElement)">
+            <summary>
+                Deserialize JsonElement to Polymorphic type
+            </summary>
+            <param name="jsonElement"></param>
+            <typeparam name="TEvent"></typeparam>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

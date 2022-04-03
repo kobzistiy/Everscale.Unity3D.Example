@@ -1,0 +1,157 @@
+{
+	"ABI version": 2,
+  "abi_version": 2,
+  "version": "2.0",
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"owners","type":"uint256[]", "components": []},
+				{"name":"reqConfirms","type":"uint8", "components": []}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "acceptTransfer",
+			"inputs": [
+				{"name":"payload","type":"bytes", "components": []}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sendTransaction",
+			"inputs": [
+				{"name":"dest","type":"address", "components": []},
+				{"name":"value","type":"uint128", "components": []},
+				{"name":"bounce","type":"bool", "components": []},
+				{"name":"flags","type":"uint8", "components": []},
+				{"name":"payload","type":"cell", "components": []}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "submitTransaction",
+			"inputs": [
+				{"name":"dest","type":"address", "components": []},
+				{"name":"value","type":"uint128", "components": []},
+				{"name":"bounce","type":"bool", "components": []},
+				{"name":"allBalance","type":"bool", "components": []},
+				{"name":"payload","type":"cell", "components": []}
+			],
+			"outputs": [
+				{"name":"transId","type":"uint64", "components": []}
+			]
+		},
+		{
+			"name": "confirmTransaction",
+			"inputs": [
+				{"name":"transactionId","type":"uint64", "components": []}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "isConfirmed",
+			"inputs": [
+				{"name":"mask","type":"uint32", "components": []},
+				{"name":"index","type":"uint8", "components": []}
+			],
+			"outputs": [
+				{"name":"confirmed","type":"bool", "components": []}
+			]
+		},
+		{
+			"name": "getParameters",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"maxQueuedTransactions","type":"uint8", "components": []},
+				{"name":"maxCustodianCount","type":"uint8", "components": []},
+				{"name":"expirationTime","type":"uint64", "components": []},
+				{"name":"minValue","type":"uint128", "components": []},
+				{"name":"requiredTxnConfirms","type":"uint8", "components": []}
+			]
+		},
+		{
+			"name": "getTransaction",
+			"inputs": [
+				{"name":"transactionId","type":"uint64", "components": []}
+			],
+			"outputs": [
+				{"components":[
+          {"name":"id","type":"uint64", "components": []},
+          {"name":"confirmationsMask","type":"uint32", "components": []},
+          {"name":"signsRequired","type":"uint8", "components": []},
+          {"name":"signsReceived","type":"uint8", "components": []},
+          {"name":"creator","type":"uint256", "components": []},
+          {"name":"index","type":"uint8", "components": []},
+          {"name":"dest","type":"address", "components": []},
+          {"name":"value","type":"uint128", "components": []},
+          {"name":"sendFlags","type":"uint16", "components": []},
+          {"name":"payload","type":"cell", "components": []},
+          {"name":"bounce","type":"bool", "components": []}
+        ],
+        "name":"trans","type":"tuple"}
+			]
+		},
+		{
+			"name": "getTransactions",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[
+          {"name":"id","type":"uint64", "components": []},
+          {"name":"confirmationsMask","type":"uint32", "components": []},
+          {"name":"signsRequired","type":"uint8", "components": []},
+          {"name":"signsReceived","type":"uint8", "components": []},
+          {"name":"creator","type":"uint256", "components": []},
+          {"name":"index","type":"uint8", "components": []},
+          {"name":"dest","type":"address", "components": []},
+          {"name":"value","type":"uint128", "components": []},
+          {"name":"sendFlags","type":"uint16", "components": []},
+          {"name":"payload","type":"cell", "components": []},
+          {"name":"bounce","type":"bool", "components": []}
+        ],
+        "name":"transactions","type":"tuple[]"}
+			]
+		},
+		{
+			"name": "getTransactionIds",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"ids","type":"uint64[]", "components": []}
+			]
+		},
+		{
+			"name": "getCustodians",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[
+          {"name":"index","type":"uint8", "components": []},
+          {"name":"pubkey","type":"uint256", "components": []}
+        ],
+        "name":"custodians","type":"tuple[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+		{
+			"name": "TransferAccepted",
+			"inputs": [
+				{"name":"payload","type":"bytes", "components": []}
+			],
+			"outputs": [
+			]
+		}
+	],
+  "fields": [],
+  "address": ""
+}

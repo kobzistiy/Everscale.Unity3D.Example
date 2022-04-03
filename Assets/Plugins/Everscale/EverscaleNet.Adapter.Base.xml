@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EverscaleNet.Adapter.Base</name>
+    </assembly>
+    <members>
+        <member name="T:EverscaleNet.Adapter.Base.EverClientAdapterBase">
+            <inheritdoc />
+        </member>
+        <member name="F:EverscaleNet.Adapter.Base.EverClientAdapterBase.ContextId">
+            <summary>
+                Current context id
+            </summary>
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.#ctor(Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+                Adapter .ctor
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.GetContextIdByCreatedContextJson(System.String)">
+            <summary>
+                Deserialize CreateContextResponse from json and return context id
+            </summary>
+            <param name="json">CreateContextResponse json string</param>
+            <returns>Context Id</returns>
+            <exception cref="T:EverscaleNet.Models.EverClientException"></exception>
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.DisposeAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.Request(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.Request``1(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.Request``2(System.String,System.Action{``1,System.UInt32},System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.Request``3(System.String,``0,System.Action{``2,System.UInt32},System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.Request``1(System.String,``0,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.Request``2(System.String,``0,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.CreateContext(System.Threading.CancellationToken)">
+            <summary>
+                Create context method
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns>Created context Id</returns>
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.RequestImpl(System.UInt32,System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+                Raw request method implementation
+            </summary>
+            <param name="requestId"></param>
+            <param name="requestJson"></param>
+            <param name="method"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EverscaleNet.Adapter.Base.EverClientAdapterBase.ResponseHandlerBase(System.UInt32,System.String,System.UInt32,System.Boolean)">
+            <summary>
+                Raw response handler implementation
+            </summary>
+            <param name="requestId"></param>
+            <param name="responseJson"></param>
+            <param name="responseType"></param>
+            <param name="finished"></param>
+            <exception cref="T:EverscaleNet.Models.EverClientException"></exception>
+        </member>
+    </members>
+</doc>
