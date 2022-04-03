@@ -10,8 +10,6 @@ Install it through OpenUPM or use the Unitypackage from the Releases.
 ```bash
 ```
 
-Place Serilog.dll to your assets folder, then use the library:
-
 ```c#
     public IEverClient CreateClient()
     {
